@@ -1,0 +1,49 @@
+{
+  "name": "diagram-js-context-pad",
+  "version": "1.0.0",
+  "description": "An element context menu component for diagram-js/bpmn-js use, base on diagram-js/lib/features/context-pad..",
+  "main": "dist/diagram-js-context-pad.cjs",
+  "module": "dist/diagram-js-context-pad.es.js",
+  "umd:main": "dist/diagram-js-context-pad.umd.js",
+  "types": "dist/context-pad/index",
+  "files": [
+    "dist",
+    "assets",
+    "screenshot",
+    "context-pad"
+  ],
+  "keywords": [
+    "diagram-js",
+    "bpmn-js",
+    "ContextPad",
+    "context-pad",
+    "diagram-js-context-pad",
+    "bpmn-js-context-pad"
+  ],
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyuesc/diagram-js-context-pad.git"
+  },
+  "author": "MiyueSC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miyuesc/diagram-js-context-pad/issues"
+  },
+  "homepage": "https://github.com/miyuesc/diagram-js-context-pad#readme",
+  "dependencies": {
+    "min-dom": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.22.5",
+    "@rollup/plugin-commonjs": "^25.0.1",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "diagram-js": "^12.2.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^5.1.3"
+  }
+}

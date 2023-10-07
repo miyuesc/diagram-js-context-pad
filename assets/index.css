@@ -1,0 +1,33 @@
+/* context pad */
+.djs-context-pad.wider-pad {
+  width: max-content;
+  max-width: 240px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px var(--color-black-opacity-10);
+}
+.djs-context-pad.wider-pad .group {
+  background-color: var(--color-grey-225-10-97);
+}
+.djs-context-pad.wider-pad .group__label {
+  width: 100%;
+  line-height: 32px;
+  font-weight: bold;
+  background-color: var(--color-white);
+}
+.djs-context-pad.wider-pad .entry {
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: unset;
+  box-shadow: none;
+}
+.djs-context-pad.wider-pad .entry__icon {
+  width: 22px;
+  height: 22px;
+}
+.djs-context-pad.wider-pad .entry__title {
+  font-size: 12px;
+}
