@@ -46,7 +46,7 @@ export default class RewriteContextPad extends BaseContextPad {
 
     let entries = this.getEntries(target),
       pad = this.getPad(target),
-      html = pad.html,
+      html = pad.html as HTMLElement,
       image
 
     forEach(entries, function (entry, id) {
@@ -64,7 +64,7 @@ export default class RewriteContextPad extends BaseContextPad {
         container = domify(`<div class="group"><div class="group__label">${grouping}</div></div>`)
         domAttr(container, 'data-group', grouping)
 
-        (html as HTMLElement).appendChild(container)
+        html.appendChild(container)
       }
 
       container.appendChild(control)
