@@ -52,7 +52,7 @@ export default class RewriteContextPad extends BaseContextPad {
     forEach(entries, function (entry, id) {
       let grouping = entry.group || 'default',
         icon = domify('<div class="entry__icon"></div>'),
-        control = domify(entry.html || '<div class="entry" draggable="true"></div>'),
+        control = domify('<div class="entry" draggable="true"></div>'),
         container
 
       control.appendChild(icon)
@@ -68,6 +68,10 @@ export default class RewriteContextPad extends BaseContextPad {
       }
 
       container.appendChild(control)
+
+      if (entry.html) {
+        control.appendChild(domify(entry.html))
+      }
 
       if (entry.className) {
         addClasses(icon, entry.className)

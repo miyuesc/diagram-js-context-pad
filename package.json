@@ -1,6 +1,6 @@
 {
   "name": "diagram-js-context-pad",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An element context menu component for diagram-js/bpmn-js use, base on diagram-js/lib/features/context-pad..",
   "main": "dist/diagram-js-context-pad.cjs",
   "module": "dist/diagram-js-context-pad.es.js",
