@@ -70,7 +70,7 @@ export default class RewriteContextPad extends BaseContextPad {
       container.appendChild(control)
 
       if (entry.html) {
-        control.appendChild(domify(entry.html))
+        icon.appendChild(domify(entry.html))
       }
 
       if (entry.className) {
